@@ -29,3 +29,19 @@ def add(a)
 end
 
 p add([2, 4, 6, 8, 10])
+
+# find the largest elemant in the array
+
+def largerst(a)
+  b = 0
+  for i in 0...a.length - 1
+    if (b > a[i])
+      b = b
+    else
+      b = a[i]
+    end
+  end
+  b
+end
+
+p largerst([9, 1, 2, 3, 4])
